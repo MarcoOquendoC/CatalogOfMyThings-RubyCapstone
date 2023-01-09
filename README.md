@@ -28,7 +28,7 @@
 
 # 📖 Catalog of My Things - Ruby Capstone <a name="about-project"></a>
 
-**Catalog of My Things - Ruby Capstone** is a command line tool for managing books renting.
+**Catalog of My Things - Ruby Capstone** is a simple console app that allows users to manage collections of the things they own.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -51,7 +51,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **[Create and manage data about my things]**
-- **[Keep track of books, songs and other information]**
+- **[Keep track of books, music albums, movies, and games and other information]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -120,7 +120,6 @@ The project is not yet deployable
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Fábio Lima**
 
