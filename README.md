@@ -127,17 +127,17 @@ The project is not yet deployable
 - Twitter: [@limavfabio](https://twitter.com/limavfabio)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/limavfabio)
 
-👤 **Marco**
+👤 **Marco Oquendo**
 
-- GitHub: [@limavfabio](https://github.com/limavfabio)
-- Twitter: [@limavfabio](https://twitter.com/limavfabio)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/limavfabio)
+- GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC). 
+- Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc). 
+- LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/MarcoOquendoC/). 
 
-👤 **Mila**
+👤 **Miliyon Ayalew**
 
-- GitHub: [@limavfabio](https://github.com/limavfabio)
-- Twitter: [@limavfabio](https://twitter.com/limavfabio)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/limavfabio)
+- GitHub: [@Miliyonayalew](https://github.com/Miliyonayalew/)
+- Twitter: [@Miliyonayalew](https://twitter.com/MilaAyalew)
+- LinkedIn: [Miliyonayalew](https://www.linkedin.com/in/miliyon-ayalew-210808131/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
