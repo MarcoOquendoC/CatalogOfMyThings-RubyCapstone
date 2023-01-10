@@ -1,15 +1,12 @@
 require_relative 'src/item'
+require_relative 'app_modules/first_menu'
 
 class App
+  include FirstMenu
+  
   def run
-    item = Item.new
-    puts 'item.publish_date'
-    puts item.publish_date
-    puts 'item.id'
-    puts item.id
-    puts 'item.can_be_archived'
-    puts item.can_be_archived?
-    puts 'item.genre'
-    puts item.genre
+    first_menu
+    handle_option
+    exit
   end
 end
