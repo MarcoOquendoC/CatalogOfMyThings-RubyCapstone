@@ -3,7 +3,7 @@ require_relative 'app_modules/first_menu'
 
 class App
   include FirstMenu
-  
+
   def run
     first_menu
     handle_option
