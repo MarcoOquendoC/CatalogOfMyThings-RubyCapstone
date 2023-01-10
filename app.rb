@@ -2,7 +2,6 @@ require_relative 'src/item'
 require_relative 'app_modules/first_menu'
 require_relative 'game/game'
 require_relative 'game/author'
-
 class App
   include FirstMenu
 
@@ -13,7 +12,7 @@ class App
   end
 end
 
-# Test
+# Test the code for Game and Author classes
 game = Game.new('2020-10-10', true, true, '2020-10-10')
 ath = Author.new('John', 'Doe')
 ath.add_item(game)
@@ -25,3 +24,5 @@ puts "Last_played: #{ath.items[0].last_played_at}"
 puts "Archived: #{ath.items[0].archived}"
 puts ath.first_name
 puts ath.last_name
+puts ath.items[0].author.first_name
+puts ath.items[0].author.last_name

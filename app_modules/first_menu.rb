@@ -40,8 +40,12 @@ module FirstMenu
     selected_option = gets.chomp.to_i
     system('clear')
     system('cls')
-    puts "You selected the option #{selected_option}"
-    exit if selected_option.zero?
+    quit_app if selected_option.zero?
     process_option(selected_option)
+  end
+
+  def quit_app
+    puts 'Thank you for using the app!'
+    exit
   end
 end
