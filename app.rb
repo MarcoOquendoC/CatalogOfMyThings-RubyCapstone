@@ -1,6 +1,5 @@
 require_relative 'src/item'
 
-
 class App
   def run
     item = Item.new
