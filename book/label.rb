@@ -13,6 +13,6 @@ class Label
 
   def add_item(item)
     @items.push(item)
-    item.label = title
+    item.label = self
   end
 end
