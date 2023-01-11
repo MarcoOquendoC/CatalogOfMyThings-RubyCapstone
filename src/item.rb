@@ -5,7 +5,7 @@ class Item
   attr_accessor :publish_date, :archived
   attr_reader :id, :genre, :author
 
-  def initialize(publish_date = Date.today, id = SecureRandom..random_number(1000), archived: false)
+  def initialize(publish_date = Date.today, id = SecureRandom.uuid, archived: false)
     @id = id
     @publish_date = publish_date
     @archived = archived
