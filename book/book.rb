@@ -1,7 +1,6 @@
 require 'date'
 require 'securerandom'
 require_relative '../src/item'
-# require_relative "label"
 
 class Book < Item
   attr_accessor :publisher, :cover_state
