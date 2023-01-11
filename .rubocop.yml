@@ -16,7 +16,7 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  IgnoredMethods: ['describe']
+  ExcludedMethods: ['describe']
   Max: 30
 Metrics/CyclomaticComplexity:
   Max: 20
@@ -51,5 +51,5 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Style/EndOfLine:
+Layout/EndOfLine:
   EnforcedStyle: lf
