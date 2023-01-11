@@ -3,9 +3,9 @@ require 'securerandom'
 
 class Item
   attr_accessor :publish_date, :archived
-  attr_reader :id, :genre, :author, :label
+  attr_reader :id, :genre, :author
 
-  def initialize(publish_date, id = SecureRandom.random_number(1000), archived: false)
+  def initialize(publish_date = Date.today, id = SecureRandom..random_number(1000), archived: false)
     @id = id
     @publish_date = publish_date
     @archived = archived
@@ -23,7 +23,7 @@ class Item
 
   def label=(label)
     @label = label
-    label.items.push(self) unless label.items.include?(self)
+    author.items.push(self) unless label.items.include?(self)
   end
 
   def move_to_archive
