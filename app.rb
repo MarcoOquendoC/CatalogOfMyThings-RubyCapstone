@@ -19,7 +19,7 @@ system('cls')
 system('clear')
 # Test the code for Game and Author classes
 puts '___________Code to test Games___________'
-game = Game.new('2020-10-10', true, true, '2020-10-10')
+game = Game.new('PES', true, '2020-10-10', '2020-10-10')
 ath = Author.new('John', 'Doe')
 ath.add_item(game)
 puts "id: #{ath.items[0].id}"
