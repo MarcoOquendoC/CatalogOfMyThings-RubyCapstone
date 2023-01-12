@@ -21,3 +21,6 @@ CREATE TABLE games{
   PRIMARY KEY(id)
   CONSTRAINT fk_author FOREIGN KEY(games_id) REFERENCES authors(id)
 }
+
+-- Index
+CREATE INDEX idx_games_authors ON games(author_id)
