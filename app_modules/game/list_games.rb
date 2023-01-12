@@ -5,9 +5,10 @@ module ListGames
       puts "\n No Games found"
       puts '============================================================'
     else
-      puts "\n List of Game \n"
+      puts "\n List of Games \n"
       @games.each_with_index do |game, index|
-        puts "(#{index + 1}) The Game: #{game.name} has been published on #{game.publish_date}"
+        puts "\n#{index + 1}). The game: #{game['name']} by #{game['author']['first_name']}
+        #{game['author']['last_name']} was published on #{game['publish_date']}"
       end
     end
     puts '============================================================'
