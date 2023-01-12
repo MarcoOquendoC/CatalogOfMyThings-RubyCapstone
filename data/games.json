@@ -1,0 +1,65 @@
+[
+  {
+    "id": "f0295ac4-0889-4a4f-b2b7-0a478febca1f",
+    "name": "PES",
+    "multiplayer": true,
+    "last_played_at": "2022-02-02",
+    "publish_date": "2018-02-02",
+    "author": {
+      "first_name": "Miliyon",
+      "last_name": "Ayalew",
+      "id": 716
+    },
+    "label": {
+      "id": "ba633a1a-ec1c-4635-ae15-eeac67162cb4",
+      "title": "PES",
+      "color": "unknown"
+    },
+    "genre": {
+      "id": 710,
+      "name": "Soccer"
+    }
+  },
+  {
+    "id": "c9579176-5cb2-4106-980f-131ddecc2293",
+    "name": "Boss Mafia",
+    "multiplayer": true,
+    "last_played_at": "2022-05-04",
+    "publish_date": "2021-05-04",
+    "author": {
+      "first_name": "MArco",
+      "last_name": "Oquendoc",
+      "id": 160
+    },
+    "label": {
+      "id": "2478551f-8d71-4e22-a219-6c11f0a6ed70",
+      "title": "Boss Mafia",
+      "color": "unknown"
+    },
+    "genre": {
+      "id": 757,
+      "name": "Adventure"
+    }
+  },
+  {
+    "id": "41aba17b-89cd-4ea0-8887-4258348da3ec",
+    "name": "Asphalt 5",
+    "multiplayer": false,
+    "last_played_at": "2018-12-16",
+    "publish_date": "2015-12-12",
+    "author": {
+      "first_name": "Jack",
+      "last_name": "Rolling",
+      "id": 339
+    },
+    "label": {
+      "id": "9118d55f-760d-4f86-a72d-139b5b102407",
+      "title": "Asphalt 5",
+      "color": "unknown"
+    },
+    "genre": {
+      "id": 736,
+      "name": "Car"
+    }
+  }
+]
