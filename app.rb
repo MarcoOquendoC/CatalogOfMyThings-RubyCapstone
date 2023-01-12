@@ -9,16 +9,13 @@ require_relative 'book/book'
 require_relative 'book/label'
 
 class App
-  def initialize()
-    @books_list = []
-    @labels_list = []
-  end
-
   include FirstMenu
 
   def initialize
     @games = PreserveGame.load_games
     @authors = PreserveGame.load_authors
+    @books_list = []
+    @labels_list = []
   end
 
   def run
