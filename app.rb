@@ -8,6 +8,11 @@ require_relative 'music/genre'
 class App
   include FirstMenu
 
+  def initialize
+    @games = []
+    @authors = []
+  end
+
   def run
     first_menu
     handle_option
