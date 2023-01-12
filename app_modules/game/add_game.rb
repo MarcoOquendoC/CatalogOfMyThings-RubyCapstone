@@ -1,3 +1,5 @@
+require_relative '../../game/preserve_data'
+
 module AddGame
   def add_game
     print 'Enter the name of the game: '
@@ -6,6 +8,8 @@ module AddGame
     first_name = gets.chomp
     print 'Enter Game creator last name: '
     last_name = gets.chomp
+    print 'Enter the Game genre: '
+    genre_name = gets.chomp
     print 'Enter the publish date [yyyy-mm-dd]: '
     publish_date = gets.chomp
     print 'Is it a multiplayer game? [Y/N]: '
@@ -20,12 +24,26 @@ module AddGame
     end
     print 'Enter the last time you played the game [yyyy-mm-dd]: '
     last_played_at = gets.chomp
+
     game = Game.new(name, multiplayer, last_played_at, publish_date)
+
     author = Author.new(first_name, last_name)
     author.add_item(game)
+
+    label = Label.new(name, 'unknown')
+    label.add_item(game)
+
+    genre = Genre.new(genre_name)
+    genre.add_item(game)
+
     @games << game unless @games.include?(game)
     @authors << author unless @authors.include?(author)
+    PreserveGame.persist_game(game, author, label, genre)
+    puts '============================================================'
     puts "\nGame added successfully"
+    puts '============================================================'
+    puts 'Press any key to go back to the main menu'
+    gets.chomp
     run
   end
 end
