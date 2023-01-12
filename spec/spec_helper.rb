@@ -1,3 +1,5 @@
 require_relative '../game/author'
 require_relative '../game/game'
+require_relative '../book/book'
+require_relative '../book/label'
 require_relative '../src/item'
