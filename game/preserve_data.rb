@@ -32,7 +32,8 @@ class PreserveGame
     data = []
     if File.exist?(file)
       JSON.parse(File.read(file)).each do |game|
-        data.push(game)
+        preserved_games = Game.new(game['name'], game['multiplayer'], game['last_played_at'], game['publish_date'])
+        data << preserved_games
       end
     end
     data
