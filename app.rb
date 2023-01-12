@@ -2,10 +2,11 @@ require_relative 'src/item'
 require_relative 'app_modules/first_menu'
 require_relative 'game/game'
 require_relative 'game/author'
-require_relative 'music_albums/music_album'
-require_relative 'music_albums/genre'
+require_relative 'music/music_album'
+require_relative 'music/genre'
 require_relative 'book/book'
 require_relative 'book/label'
+
 
 class App
   def initialize()
