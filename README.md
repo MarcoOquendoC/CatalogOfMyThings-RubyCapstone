@@ -59,9 +59,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Not yet available
-
-<!-- - [Live Demo Link](https://yourdeployedapplicationlink.com) -->
+Please visit our live demo. Click the [ ![Run](https://img.shields.io/badge/-Run-brightgreen)](https://replit.com/@marcooquendoc/CatalogOfMyThings-RubyCapstone#main.rb) button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
