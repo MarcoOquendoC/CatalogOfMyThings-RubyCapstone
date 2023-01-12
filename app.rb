@@ -7,7 +7,6 @@ require_relative 'music/genre'
 require_relative 'book/book'
 require_relative 'book/label'
 
-
 class App
   def initialize()
     @books_list = []
