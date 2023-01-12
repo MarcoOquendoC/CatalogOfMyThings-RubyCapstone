@@ -16,6 +16,8 @@ class App
     @authors = PreserveGame.load_authors
     @genres = []
     @music_albums = []
+    @books_list = []
+    @labels_list = []
   end
 
   def run
