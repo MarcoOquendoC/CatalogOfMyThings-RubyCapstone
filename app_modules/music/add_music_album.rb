@@ -1,3 +1,6 @@
+require_relative '../../music/preserve'
+require_relative '../../game/preserve_data'
+
 module AddMusicAlbum
   def add_music_album
     greet_add_album
@@ -17,30 +20,35 @@ module AddMusicAlbum
     print "\nWhat's the publish date? [year]: "
     album_date = gets.chomp.to_i
 
-    print 'Is this Music Album on Spotify? [y/n]: '
+    print 'Is this Music Album on Spotify? [y: true / anykey: false]: '
     spotify = gets.chomp
     is_on_spotify = case spotify.downcase
                     when 'y'
                       true
                     else
+                      puts 'on_spotify set to false'
                       false
                     end
 
     music_album = MusicAlbum.new(album_date, on_spotify: is_on_spotify)
 
-    label = Label.new(label, 'unknown')
+    label = Label.new(label, 'Green')
     label.add_item(music_album)
 
     author = Author.new(first_name, last_name)
     author.add_item(music_album)
 
-    new_genre = Genre.new(genre_name)
-    new_genre.add_item(music_album)
+    genre = Genre.new(genre_name)
+    genre.add_item(music_album)
 
-    @labels_list << label
+    @labels << label
     @authors << author
-    @genres << new_genre
+    @genres << genre
     @music_albums << music_album
+
+    Preserve.albums(music_album)
+    Preserve.genres(genre)
+    PreserveGame.persist_author(author)
 
     puts 'Album added successfully!'
     puts 'Press enter to continue'

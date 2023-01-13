@@ -7,6 +7,7 @@ require_relative 'music/genre'
 require_relative 'game/preserve_data'
 require_relative 'book/book'
 require_relative 'book/label'
+require_relative 'music/load'
 require_relative 'book/persist_books'
 
 class App
@@ -17,8 +18,8 @@ class App
     @authors = PreserveGame.load_authors
     @books = PersistBooks.load_books
     @labels = PersistBooks.load_labels
-    @genres = []
-    @music_albums = []
+    @genres = Load.genres
+    @music_albums = Load.albums
   end
 
   def run

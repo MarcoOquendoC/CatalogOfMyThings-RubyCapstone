@@ -2,18 +2,16 @@ module ListMusicAlbums
   def list_music_albums
     greet_albums
 
-    @music_albums.map do |album|
-      genre = [
-        "ID: #{album.genre.id}",
-        "Name: #{album.genre.name}",
-        "Item(s): #{album.genre.items.count}"
-      ]
+    @music_albums.each_with_index do |album, index|
       puts '{'
-      puts "  Name: #{album.label.title}"
+      puts "  Index: #{index + 1}"
+      puts "  ID: #{album.id}"
+      puts "  Title: #{album.label.title}"
+      puts "  Genre: #{album.genre.name}"
+      puts "  Author: #{album.author.first_name} #{album.author.last_name}"
       puts "  On Spotify?: #{album.on_spotify}"
-      puts "  Archived: #{album.archived}"
       puts "  Publish Date: #{album.publish_date}"
-      puts "  Genre: #{genre}"
+      puts "  Archived: #{album.archived}"
       puts '}'
     end
 
