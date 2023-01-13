@@ -21,10 +21,11 @@ class PreserveGame
         name: game.genre.name
       }
     }
-    games_data = File.exist?(file) ? File.read(file) : File.write(file, '[]')
+    File.write(file, '[]') unless File.exist?(file)
+    games_data = File.read(file)
     @games = JSON.parse(games_data)
     @games << new_game
-    File.write('./data/games.json', JSON.pretty_generate(@games))
+    File.write(file, JSON.pretty_generate(@games))
   end
 
   def self.persist_author(authors)
@@ -34,7 +35,8 @@ class PreserveGame
       last_name: authors.last_name,
       id: authors.id
     }
-    authors_data = File.exist?(file) ? File.read(file) : File.write(file, '[]')
+    File.write(file, '[]') unless File.exist?(file)
+    authors_data = File.read(file)
     @authors = JSON.parse(authors_data)
     @authors << author
     File.write(file, JSON.pretty_generate(@authors))
