@@ -16,7 +16,7 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  ExcludedMethods: ['describe']
+  AllowedMethods: ['describe']
   Max: 30
 Metrics/CyclomaticComplexity:
   Max: 20
