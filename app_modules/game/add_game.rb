@@ -38,7 +38,8 @@ module AddGame
 
     @games << game unless @games.include?(game)
     @authors << author unless @authors.include?(author)
-    PreserveGame.persist_game(game, author, label, genre)
+    @labels_list << label unless @labels_list.include?(author)
+    PreserveGame.persist_game(game)
     puts '============================================================'
     puts "\nGame added successfully"
     puts '============================================================'

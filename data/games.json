@@ -38,5 +38,25 @@
       "id": 29,
       "name": "Sport"
     }
+  },
+  {
+    "id": "aa8426cc-559b-430f-81ea-4934fc0a8ce2",
+    "multiplayer": true,
+    "last_played_at": "2022-01-26",
+    "publish_date": "2022-01-22",
+    "author": {
+      "first_name": "Jack",
+      "last_name": "Wilsher",
+      "id": 545
+    },
+    "label": {
+      "id": "54a8f845-37ff-4f9d-8847-be78e11046ea",
+      "title": "Call of duty",
+      "color": "unknown"
+    },
+    "genre": {
+      "id": 622,
+      "name": "action"
+    }
   }
 ]
