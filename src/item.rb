@@ -23,7 +23,7 @@ class Item
 
   def label=(label)
     @label = label
-    author.items.push(self) unless label.items.include?(self)
+    label.items.push(self) unless label.items.include?(self)
   end
 
   def move_to_archive
