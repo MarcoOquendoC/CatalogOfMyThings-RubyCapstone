@@ -2,12 +2,11 @@ module ListGenres
   def list_genres
     greet_genres
 
-    @genres.map do |genre|
-      items = genre.items.map { |item| "#{item.class.name} - #{item.label.title}" }
+    @genres.each_with_index do |genre, index|
       puts '{'
+      puts "  [Index]: #{index + 1}"
       puts "  ID: #{genre.id}"
       puts "  Name: #{genre.name}"
-      puts "  Items: #{items}"
       puts '}'
     end
 
