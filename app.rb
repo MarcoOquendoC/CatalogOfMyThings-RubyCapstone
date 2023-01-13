@@ -17,6 +17,8 @@ class App
     @authors = PreserveGame.load_authors
     @books = PersistBooks.load_books
     @labels = PersistBooks.load_labels
+    @genres = []
+    @music_albums = []
   end
 
   def run
@@ -25,6 +27,3 @@ class App
     exit
   end
 end
-
-system('cls')
-system('clear')
