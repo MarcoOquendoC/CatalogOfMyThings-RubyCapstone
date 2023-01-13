@@ -4,10 +4,10 @@ module ListMusicAlbums
 
     @music_albums.map do |album|
       genre = [
-                "ID: #{album.genre.id}",
-                "Name: #{album.genre.name}",
-                "Item(s): #{album.genre.items.count}"
-              ]
+        "ID: #{album.genre.id}",
+        "Name: #{album.genre.name}",
+        "Item(s): #{album.genre.items.count}"
+      ]
       puts '{'
       puts "  Name: #{album.name}"
       puts "  On Spotify?: #{album.on_spotify}"
