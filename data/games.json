@@ -78,5 +78,25 @@
       "id": 588,
       "name": "action"
     }
+  },
+  {
+    "id": "5d0a83bb-f90e-4dbe-bd15-d0c7227f20b4",
+    "multiplayer": false,
+    "last_played_at": "2022-01-05",
+    "publish_date": "2013-02-02",
+    "author": {
+      "first_name": "Demon",
+      "last_name": "Dance",
+      "id": 329
+    },
+    "label": {
+      "id": "b57371bd-366d-4ca7-9c7b-8f871fa0f606",
+      "title": "CodeCombat",
+      "color": "unknown"
+    },
+    "genre": {
+      "id": 45,
+      "name": "Scientific"
+    }
   }
 ]
