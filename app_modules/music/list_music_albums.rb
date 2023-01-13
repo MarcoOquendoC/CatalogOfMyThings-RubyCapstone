@@ -2,7 +2,7 @@ module ListMusicAlbums
   def list_music_albums
     greet_albums
 
-    @music_albums.each_with_index do |album,index|
+    @music_albums.each_with_index do |album, index|
       puts '{'
       puts "  Index: #{index + 1}"
       puts "  ID: #{album.id}"
