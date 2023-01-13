@@ -1,6 +1,5 @@
 class Preserve
   def self.albums(album)
-    puts 'Preserving album...'
     genre = {
       id: album.genre.id,
       name: album.genre.name
@@ -13,10 +12,11 @@ class Preserve
 
     author = {
       id: album.author.id,
-      name: "#{album.author.first_name} #{album.author.last_name}"
+      first_name: album.author.first_name,
+      last_name: album.author.last_name
     }
 
-    obj = {
+    new_album = {
       id: album.id,
       on_spotify: album.on_spotify,
       publish_date: album.publish_date,
@@ -26,40 +26,33 @@ class Preserve
       author: author
     }
 
-    # open, load, append, erase, write, close
-    # file = File.open('./data/albums.json', 'r+')
-    # data = JSON.parse(file) || []
-    # data.push(obj)
-    # file.pos = 0
-    # file.truncate(file.size)
-    # file.write(JSON.pretty_generate(data))
-    # file.close
+    file = './data/albums.json'
+    File.write(file, '[]') unless File.exist?(file)
+    albums_data = File.read(file)
+    @music_albums = JSON.parse(albums_data)
+    @music_albums << new_album
+    File.write(file, JSON.pretty_generate(@music_albums))
   end
 
-  def self.genres(_genre)
+  def self.genres(genre)
     puts 'preserve genres no code yet'
-    # obj = {
-    #   id: id,
-    #   name: name,
-    #   items: items.map do |item|
-    #     item_obj = {
-    #       id: item.id,
-    #       title: item.label.title,
-    #       on_spotify: item.on_spotify,
-    #       publish_date: item.publish_date,
-    #       archived: item.archived
-    #     }
-    #     item_obj
-    #   end
-    # }
+    new_genre = {
+      id: genre.id,
+      name: genre.name,
+      items: genre.items.map do |item|
+        item_obj = {
+          id: item.id,
+          title: item.label.title,
+        }
+        item_obj
+      end
+    }
 
-    # open, load, append, erase, write, close
-    # file = File.open('./data/genres.json', 'r+')
-    # data = JSON.parse(file) || []
-    # data.push(obj)
-    # file.pos = 0
-    # file.truncate(file.size)
-    # file.write(JSON.pretty_generate(data))
-    # file.close
+    file = './data/genres.json'
+    File.write(file, '[]') unless File.exist?(file)
+    genres_data = File.read(file)
+    @genres = JSON.parse(genres_data)
+    @genres << new_genre
+    File.write(file, JSON.pretty_generate(@genres))
   end
 end

@@ -1,4 +1,5 @@
 require_relative '../../music/preserve'
+require_relative '../../game/preserve_data'
 
 module AddMusicAlbum
   def add_music_album
@@ -47,7 +48,7 @@ module AddMusicAlbum
 
     Preserve.albums(music_album)
     Preserve.genres(genre)
-    # PreserveGame.persist_author(author)
+    PreserveGame.persist_author(author)
 
     puts 'Album added successfully!'
     puts 'Press enter to continue'
