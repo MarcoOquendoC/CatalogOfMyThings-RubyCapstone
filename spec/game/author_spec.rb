@@ -25,7 +25,7 @@ describe 'Author' do
 
   describe '#add_item' do
     it 'should return an array of game objects' do
-      game = Game.new('PES', true, '2020-10-10', '2020-10-10')
+      game = Game.new(true, '2020-10-10', '2020-10-10')
       @author.add_item(game)
       expect(@author.items).to include(game)
     end
