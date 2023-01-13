@@ -26,7 +26,7 @@ describe "Genre class unit tests.\n" do
 
   context "Calling genre_object.add_item(album_item) method\n" do
     it 'should push album_item into genre_object.items array' do
-      album_item = MusicAlbum.new('2020-10-10', false, 'Garage', on_spotify: true)
+      album_item = MusicAlbum.new('2020-10-10', 'Garage', on_spotify: true)
       @genre = Genre.new('Rock')
       @genre.add_item(album_item)
       expect(@genre.items).to include(album_item)
