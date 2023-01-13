@@ -25,7 +25,7 @@ module AddGame
     print 'Enter the last time you played the game [yyyy-mm-dd]: '
     last_played_at = gets.chomp
 
-    game = Game.new(name, multiplayer, last_played_at, publish_date)
+    game = Game.new(multiplayer, last_played_at, publish_date)
 
     author = Author.new(first_name, last_name)
     author.add_item(game)
