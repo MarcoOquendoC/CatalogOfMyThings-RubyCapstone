@@ -2,14 +2,11 @@ require_relative '../src/item'
 require_relative 'preserve_album'
 
 class MusicAlbum < Item
-  include PreserveAlbum
+  attr_accessor :on_spotify
 
-  attr_accessor :on_spotify, :name
-
-  def initialize(publish_date, name, on_spotify: false)
+  def initialize(publish_date, on_spotify: false)
     super(publish_date, archived: false)
     @on_spotify = on_spotify
-    @name = name
   end
 
   def can_be_archived?

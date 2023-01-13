@@ -9,7 +9,7 @@ module ListMusicAlbums
         "Item(s): #{album.genre.items.count}"
       ]
       puts '{'
-      puts "  Name: #{album.name}"
+      puts "  Name: #{album.label.title}"
       puts "  On Spotify?: #{album.on_spotify}"
       puts "  Archived: #{album.archived}"
       puts "  Publish Date: #{album.publish_date}"

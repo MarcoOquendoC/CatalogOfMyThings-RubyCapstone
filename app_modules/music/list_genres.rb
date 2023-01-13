@@ -3,7 +3,7 @@ module ListGenres
     greet_genres
 
     @genres.map do |genre|
-      items = genre.items.map { |item| "#{item.class.name} - #{item.name}" }
+      items = genre.items.map { |item| "#{item.class.name} - #{item.label.title}" }
       puts '{'
       puts "  ID: #{genre.id}"
       puts "  Name: #{genre.name}"
