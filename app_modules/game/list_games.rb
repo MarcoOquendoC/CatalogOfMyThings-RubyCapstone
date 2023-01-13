@@ -1,5 +1,7 @@
 module ListGames
   def list_games
+    greet_games
+
     puts '============================================================'
     if @games.empty?
       puts "\n No Games found"
@@ -15,5 +17,14 @@ module ListGames
     puts 'Press any key to go back to the main menu'
     gets.chomp
     run
+  end
+
+  def greet_games
+    # Generated from https://edukits.co/text-art/ (duplicate \ to print them)
+    puts '   _________    _____   ____   ______'
+    puts '  / ___\\__  \\  /     \\_/ __ \\ /  ___/'
+    puts ' / /_/  > __ \\|  Y Y  \\  ___/ \\___ \\ '
+    puts ' \\___  (____  /__|_|  /\\___  >____  >'
+    puts '/_____/     \\/      \\/     \\/     \\/ '
   end
 end

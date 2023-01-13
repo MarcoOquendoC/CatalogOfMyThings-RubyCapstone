@@ -4,6 +4,8 @@ require_relative '../../music/preserve'
 
 module AddBook
   def add_book
+    greet_add_book
+
     puts 'Enter author first name'
     author_first_name = gets.chomp
     puts 'Enter author last name'
@@ -45,5 +47,15 @@ module AddBook
     puts 'Press Enter to return to main menu'
     gets.chomp
     run
+  end
+
+  def greet_add_book
+    # Generated from https://edukits.co/text-art/ (duplicate \ to print them)
+    puts '                          ___.                  __    '
+    puts '    ____   ______  _  __ \\_ |__   ____   ____ |  | __'
+    puts '   /    \\_/ __ \\ \\/ \\/ /  | __ \\ /  _ \\ /  _ \\|  |/ /'
+    puts '  |   |  \\  ___/\\     /   | \\_\\ (  <_> |  <_> )    < '
+    puts '  |___|  /\\___  >\\/\\_/    |___  /\\____/ \\____/|__|_ \\'
+    puts '       \\/     \\/              \\/                   \\/'
   end
 end
