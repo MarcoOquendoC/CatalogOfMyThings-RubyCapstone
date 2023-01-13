@@ -5,7 +5,7 @@ module ListGames
       puts "\n No Games found"
       puts '============================================================'
     else
-      puts "\n List of Game \n"
+      puts "\n List of Authors \n"
       @games.each_with_index do |game, index|
         puts "(#{index + 1}) The Game: #{game.name} has been published on #{game.publish_date}"
       end
