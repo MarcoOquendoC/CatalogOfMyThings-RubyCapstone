@@ -1,7 +1,7 @@
 require 'json'
 
 class PersistBooks
-  def self.persist_book(book, label, author, genre)
+  def self.persist_book(book)
     file = './data/books.json'
     new_book = {
       id: book.id,
@@ -9,18 +9,18 @@ class PersistBooks
       cover_state: book.cover_state,
       publish_date: book.publish_date,
       author: {
-        first_name: author.first_name,
-        last_name: author.last_name,
-        id: author.id
+        first_name: book.author.first_name,
+        last_name: book.author.last_name,
+        id: book.author.id
       },
       label: {
-        id: label.id,
-        title: label.title,
-        color: label.color
+        id: book.label.id,
+        title: book.label.title,
+        color: book.label.color
       },
       genre: {
-        id: genre.id,
-        name: genre.name
+        id: book.genre.id,
+        name: book.genre.name
       }
     }
     File.write(file, '[]') unless File.exist?(file)
@@ -28,6 +28,21 @@ class PersistBooks
     @books = JSON.parse(books_data)
     @books << new_book
     File.write(file, JSON.pretty_generate(@books))
+  end
+
+  def self.persist_label(label)
+    file = './data/labels.json'
+    label = {
+      title: label.title,
+      color: label.color,
+      id: label.id
+    }
+
+    File.write(file, '[]') unless File.exist?(file)
+    labels_data = File.read(file)
+    @labels = JSON.parse(labels_data)
+    @labels << label
+    File.write(file, JSON.pretty_generate(@labels))
   end
 
   def self.load_books
@@ -47,16 +62,12 @@ class PersistBooks
   end
 
   def self.load_labels
-    file = './data/books.json'
+    file = './data/labels.json'
     data = []
     if File.exist?(file)
-      JSON.parse(File.read(file)).each do |label|
-        preserved_label = Label.new(
-          label['label']['title'],
-          label['label']['color'],
-          label['label']['id']
-        )
-        data << preserved_label
+      JSON.parse(File.read(file)).each do |labels|
+        label = Label.new(labels['title'], labels['color'], id: labels['id'])
+        data << label
       end
     end
     data

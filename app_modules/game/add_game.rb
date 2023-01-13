@@ -1,5 +1,6 @@
+require_relative '../../book/persist_books'
 require_relative '../../game/preserve_data'
-
+require_relative '../../music/preserve'
 module AddGame
   def add_game
     print 'Enter the name of the game: '
@@ -26,21 +27,20 @@ module AddGame
     last_played_at = gets.chomp
 
     game = Game.new(multiplayer, last_played_at, publish_date)
-
     author = Author.new(first_name, last_name)
     author.add_item(game)
-
     label = Label.new(name, 'unknown')
     label.add_item(game)
-
     genre = Genre.new(genre_name)
     genre.add_item(game)
-
     @games << game unless @games.include?(game)
     @authors << author unless @authors.include?(author)
-    @labels_list << label unless @labels_list.include?(author)
+    @labels << label unless @labels.include?(label)
     PreserveGame.persist_game(game)
     PreserveGame.persist_author(author)
+    PersistBooks.persist_label(label)
+    Preserve.genres(genre)
+
     puts '============================================================'
     puts "\nGame added successfully"
     puts '============================================================'

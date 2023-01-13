@@ -1,4 +1,6 @@
+require_relative '../../game/preserve_data'
 require_relative '../../book/persist_books'
+require_relative '../../music/preserve'
 
 module AddBook
   def add_book
@@ -10,9 +12,9 @@ module AddBook
     publisher = gets.chomp
     puts 'Enter book genre'
     genre_name = gets.chomp
-    puts 'Enter book cover state'
+    puts 'Enter book cover state bad or good'
     cover_state = gets.chomp
-    puts 'Enter book publish date'
+    puts 'Enter book publish date [yyyy-mm-dd]:'
     publish_date = gets.chomp
     puts 'Enter label title for the book'
     label_title = gets.chomp
@@ -32,8 +34,11 @@ module AddBook
 
     @books << new_book unless @books.include?(new_book)
     @labels << new_label unless @labels.include?(new_label)
-
-    PersistBooks.persist_book(new_book, new_label, new_author, new_genre)
+    @authors << new_author unless @authors.include?(new_author)
+    PersistBooks.persist_book(new_book)
+    PersistBooks.persist_label(new_label)
+    PreserveGame.persist_author(new_author)
+    Preserve.genres(new_genre)
 
     system('clear')
     puts 'Book added succesfully!'
