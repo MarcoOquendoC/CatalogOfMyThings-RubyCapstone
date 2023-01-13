@@ -35,7 +35,6 @@ class Preserve
   end
 
   def self.genres(genre)
-    puts 'preserve genres no code yet'
     new_genre = {
       id: genre.id,
       name: genre.name,
