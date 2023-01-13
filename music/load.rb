@@ -3,7 +3,6 @@ class Load
     []
   end
 
-
   def self.albums
     []
   end
