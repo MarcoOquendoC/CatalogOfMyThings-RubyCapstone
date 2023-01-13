@@ -2,6 +2,8 @@ require_relative '../../game/preserve_data'
 
 module AddGame
   def add_game
+    greet_add_game
+
     print 'Enter the name of the game: '
     name = gets.chomp
     print 'Enter Game creator first name: '
@@ -47,5 +49,13 @@ module AddGame
     puts 'Press any key to go back to the main menu'
     gets.chomp
     run
+  end
+
+  def greet_add_game
+    puts '  ____   ______  _  __    _________    _____   ____  '
+    puts ' /    \\_/ __ \\ \\/ \\/ /   / ___\\__  \\  /     \\_/ __ \\ '
+    puts '|   |  \\  ___/\\     /   / /_/  > __ \\|  Y Y  \\  ___/ '
+    puts '|___|  /\\___  >\\/\\_/    \\___  (____  /__|_|  /\\___  >'
+    puts '     \\/     \\/         /_____/     \\/      \\/     \\/ '
   end
 end
