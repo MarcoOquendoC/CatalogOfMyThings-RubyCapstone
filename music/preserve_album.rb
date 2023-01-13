@@ -3,21 +3,21 @@ module PreserveAlbum
     genre = {
       id: self.genre.id,
       name: self.genre.name,
-      items: self.genre.items.map { |item| item.name }
+      items: self.genre.items.map(&:name)
     }
 
     obj = {
-      id: self.id,
-      name: self.name,
-      on_spotify: self.on_spotify,
+      id: id,
+      name: name,
+      on_spotify: on_spotify,
       genre: genre,
-      publish_date: self.publish_date,
-      archived: self.archived
+      publish_date: publish_date,
+      archived: archived
     }
 
     # open, load, append, erase, write, close
-    file = File.open('./data/albums.json', "r+")
-    data = JSON.load(file) || []
+    file = File.open('./data/albums.json', 'r+')
+    data = JSON.parse(file) || []
     data.push(obj)
     file.pos = 0
     file.truncate(file.size)

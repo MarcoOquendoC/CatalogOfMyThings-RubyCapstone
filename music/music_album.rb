@@ -14,8 +14,8 @@ class MusicAlbum < Item
   end
 
   def self.load_albums
-    file = File.open('./data/albums.json', "r")
-    data = JSON.load(file) || []
+    file = File.open('./data/albums.json', 'r')
+    data = JSON.parse(file) || []
     file.close
     data
   end

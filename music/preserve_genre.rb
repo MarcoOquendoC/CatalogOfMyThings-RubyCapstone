@@ -1,9 +1,9 @@
 module PreserveGenre
   def preserve
     obj = {
-      id: self.id,
-      name: self.name,
-      items: self.items.map do |item| 
+      id: id,
+      name: name,
+      items: items.map do |item|
         item_obj = {
           id: item.id,
           name: item.name,
@@ -16,8 +16,8 @@ module PreserveGenre
     }
 
     # open, load, append, erase, write, close
-    file = File.open('./data/genres.json', "r+")
-    data = JSON.load(file) || []
+    file = File.open('./data/genres.json', 'r+')
+    data = JSON.parse(file) || []
     data.push(obj)
     file.pos = 0
     file.truncate(file.size)
