@@ -2,6 +2,8 @@ require_relative '../src/item'
 require_relative 'preserve_album'
 
 class MusicAlbum < Item
+  include PreserveAlbum
+
   attr_accessor :on_spotify
 
   def initialize(publish_date, on_spotify: false)

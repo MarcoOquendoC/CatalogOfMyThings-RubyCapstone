@@ -3,12 +3,18 @@ module PreserveAlbum
     genre = {
       id: self.genre.id,
       name: self.genre.name,
-      items: self.genre.items.map(&:name)
+      items: self.genre.items.map { |item| { id: item.id, title: item.label.title } }
+    }
+
+    label = {
+      id: self.label.id,
+      title: self.label.title,
+      items: self.label.items.map { |item| { id: item.id, name: item.label.title } }
     }
 
     obj = {
       id: id,
-      name: name,
+      label: label,
       on_spotify: on_spotify,
       genre: genre,
       publish_date: publish_date,

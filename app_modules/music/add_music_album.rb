@@ -42,6 +42,7 @@ module AddMusicAlbum
     @authors << author
     @genres << genre
     @music_albums << music_album
+
     music_album.preserve
     genre.preserve
 
