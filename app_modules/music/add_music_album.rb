@@ -32,7 +32,7 @@ module AddMusicAlbum
 
     music_album = MusicAlbum.new(album_date, on_spotify: is_on_spotify)
 
-    label = Label.new(label, 'unknown')
+    label = Label.new(label, 'Green')
     label.add_item(music_album)
 
     author = Author.new(first_name, last_name)
@@ -41,7 +41,7 @@ module AddMusicAlbum
     genre = Genre.new(genre_name)
     genre.add_item(music_album)
 
-    @labels_list << label
+    @labels << label
     @authors << author
     @genres << genre
     @music_albums << music_album
