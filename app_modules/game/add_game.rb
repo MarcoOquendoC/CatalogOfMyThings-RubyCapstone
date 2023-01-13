@@ -25,7 +25,7 @@ module AddGame
     print 'Enter the last time you played the game [yyyy-mm-dd]: '
     last_played_at = gets.chomp
 
-    game = Game.new(name, multiplayer, last_played_at, publish_date)
+    game = Game.new(multiplayer, last_played_at, publish_date)
 
     author = Author.new(first_name, last_name)
     author.add_item(game)
@@ -38,7 +38,9 @@ module AddGame
 
     @games << game unless @games.include?(game)
     @authors << author unless @authors.include?(author)
-    PreserveGame.persist_game(game, author, label, genre)
+    @labels_list << label unless @labels_list.include?(author)
+    PreserveGame.persist_game(game)
+    PreserveGame.persist_author(author)
     puts '============================================================'
     puts "\nGame added successfully"
     puts '============================================================'
