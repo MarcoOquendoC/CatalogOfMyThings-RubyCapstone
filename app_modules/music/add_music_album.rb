@@ -11,22 +11,25 @@ module AddMusicAlbum
     print "\nWhat's the publish date? [year]: "
     album_date = gets.chomp.to_i
 
-    print 'Is this Music Album on Spotify? [y/n]: '
+    print 'Is this Music Album on Spotify? [y: true / anykey: false]: '
     spotify = gets.chomp
     is_on_spotify = case spotify.downcase
                     when 'y'
                       true
                     else
+                      puts 'on_spotify set to false'
                       false
                     end
 
     music_album = MusicAlbum.new(album_date, album_name, on_spotify: is_on_spotify)
 
-    new_genre = Genre.new(genre_name)
-    new_genre.add_item(music_album)
+    genre = Genre.new(genre_name)
+    genre.add_item(music_album)
 
-    @genres << new_genre
+    @genres << genre
     @music_albums << music_album
+    music_album.preserve
+    genre.preserve
 
     puts 'Album added successfully!'
     puts 'Press enter to continue'

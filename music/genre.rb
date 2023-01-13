@@ -1,10 +1,13 @@
 require 'securerandom'
+require_relative 'preserve_genre'
 
 class Genre
+  include PreserveGenre
+
   attr_accessor :name, :items
   attr_reader :id
 
-  def initialize(name, id = SecureRandom.random_number(1000))
+  def initialize(name, id = SecureRandom.uuid)
     @id = id
     @name = name
     @items = []
