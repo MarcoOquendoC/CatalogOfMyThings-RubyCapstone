@@ -27,6 +27,19 @@ class PreserveGame
     File.write('./data/games.json', JSON.pretty_generate(@games))
   end
 
+  def self.persist_author(authors)
+    file = './data/authors.json'
+    author << {
+      first_name: authors.first_name,
+      last_name: authors.last_name,
+      id: authors.id
+    }
+    authors_data = File.exist?(file) ? File.read(file) : File.write(file, '[]')
+    @authors = JSON.parse(authors_data)
+    @authors << author
+    File.write(file, JSON.pretty_generate(@authors))
+  end
+  
   def self.load_games
     file = './data/games.json'
     data = []
