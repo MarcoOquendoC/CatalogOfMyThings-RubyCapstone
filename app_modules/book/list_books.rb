@@ -3,7 +3,7 @@ module ListBooks
     puts 'List of all books'
     puts ''
 
-    @books_list.each do |book|
+    @books.each do |book|
       puts "Publisher: #{book.publisher}, Cover State: #{book.cover_state}, Publish Date: #{book.publish_date}"
     end
 

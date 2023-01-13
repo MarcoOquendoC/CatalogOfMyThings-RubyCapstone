@@ -3,7 +3,7 @@ module ListLabels
     puts 'List of all labels'
     puts ''
 
-    @labels_list.each do |label|
+    @labels.each do |label|
       puts "Title: #{label.title}, Color: #{label.color}"
     end
 
