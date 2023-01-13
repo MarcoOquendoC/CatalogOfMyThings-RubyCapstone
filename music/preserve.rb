@@ -37,14 +37,7 @@ class Preserve
   def self.genres(genre)
     new_genre = {
       id: genre.id,
-      name: genre.name,
-      items: genre.items.map do |item|
-        item_obj = {
-          id: item.id,
-          title: item.label.title,
-        }
-        item_obj
-      end
+      name: genre.name
     }
 
     file = './data/genres.json'
