@@ -8,6 +8,8 @@ require_relative 'game/list_authors'
 require_relative 'book/add_book'
 require_relative 'music/add_music_album'
 require_relative 'game/add_game'
+require_relative 'greetings'
+require_relative 'goodbye'
 
 module FirstMenu
   include ProcessOption
@@ -20,8 +22,11 @@ module FirstMenu
   include AddBook
   include AddMusicAlbum
   include AddGame
+  include Greetings
+  include Goodbye
 
   def first_menu
+    greet
     puts "Menu: Please choose an option\n"
     puts '1.- List all books'
     puts '2.- List all music albums'
@@ -46,6 +51,7 @@ module FirstMenu
 
   def quit_app
     puts 'Thank you for using the app!'
+    goodbye
     exit
   end
 end

@@ -14,6 +14,8 @@ class App
   def initialize
     @games = PreserveGame.load_games
     @authors = PreserveGame.load_authors
+    @genres = []
+    @music_albums = []
     @books_list = []
     @labels_list = []
   end
@@ -24,6 +26,3 @@ class App
     exit
   end
 end
-
-system('cls')
-system('clear')
