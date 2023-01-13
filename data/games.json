@@ -40,63 +40,23 @@
     }
   },
   {
-    "id": "aa8426cc-559b-430f-81ea-4934fc0a8ce2",
+    "id": "a67ca0af-d288-45dd-83ce-45a6a416d0fb",
     "multiplayer": true,
-    "last_played_at": "2022-01-26",
-    "publish_date": "2022-01-22",
+    "last_played_at": "2022",
+    "publish_date": "2022",
     "author": {
-      "first_name": "Jack",
-      "last_name": "Wilsher",
-      "id": 545
+      "first_name": "g",
+      "last_name": "g",
+      "id": 207
     },
     "label": {
-      "id": "54a8f845-37ff-4f9d-8847-be78e11046ea",
-      "title": "Call of duty",
+      "id": "98f057c5-54d7-4bf7-be8e-6bd7b7b97c29",
+      "title": "g",
       "color": "unknown"
     },
     "genre": {
-      "id": 622,
-      "name": "action"
-    }
-  },
-  {
-    "id": "1e7c31e1-f032-4c16-8e1e-9aaf8b556d15",
-    "multiplayer": false,
-    "last_played_at": "202-12-15",
-    "publish_date": "2018-12-12",
-    "author": {
-      "first_name": "Jackson",
-      "last_name": "Statman",
-      "id": 1
-    },
-    "label": {
-      "id": "1033271f-d6c6-4c4c-90c6-d0895b37f8d1",
-      "title": "Callof duty",
-      "color": "unknown"
-    },
-    "genre": {
-      "id": 588,
-      "name": "action"
-    }
-  },
-  {
-    "id": "5d0a83bb-f90e-4dbe-bd15-d0c7227f20b4",
-    "multiplayer": false,
-    "last_played_at": "2022-01-05",
-    "publish_date": "2013-02-02",
-    "author": {
-      "first_name": "Demon",
-      "last_name": "Dance",
-      "id": 329
-    },
-    "label": {
-      "id": "b57371bd-366d-4ca7-9c7b-8f871fa0f606",
-      "title": "CodeCombat",
-      "color": "unknown"
-    },
-    "genre": {
-      "id": 45,
-      "name": "Scientific"
+      "id": "9f3e71a2-f87f-4ff1-b206-f53298dc0631",
+      "name": "g"
     }
   }
 ]

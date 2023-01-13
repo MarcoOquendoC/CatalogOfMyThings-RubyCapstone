@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "id": "0aa897af-0786-4c1a-b263-41ac1c9f2c3c",
+    "on_spotify": true,
+    "publish_date": 2021,
+    "archived": false,
+    "label": {
+      "id": "003e9f40-1386-4c2e-a72f-e913431e2992",
+      "title": "misic"
+    },
+    "genre": {
+      "id": "70a52830-aa5e-4542-93fa-66a451ec7b07",
+      "name": "rock"
+    },
+    "author": {
+      "id": 849,
+      "first_name": "gorge",
+      "last_name": "fabin"
+    }
+  }
+]

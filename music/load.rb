@@ -4,11 +4,8 @@ class Load
     data = []
     if File.exist?(file)
       JSON.parse(File.read(file)).each do |genre|
-        preserved_genre = Genre.new(
-          genre['name'],
-          genre['id']
-        )
-        data << preserved_genre
+        genre = Genre.new(genre['name'], id: genre['id'])
+        data << genre
       end
     end
     data
