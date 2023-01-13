@@ -58,5 +58,25 @@
       "id": 622,
       "name": "action"
     }
+  },
+  {
+    "id": "1e7c31e1-f032-4c16-8e1e-9aaf8b556d15",
+    "multiplayer": false,
+    "last_played_at": "202-12-15",
+    "publish_date": "2018-12-12",
+    "author": {
+      "first_name": "Jackson",
+      "last_name": "Statman",
+      "id": 1
+    },
+    "label": {
+      "id": "1033271f-d6c6-4c4c-90c6-d0895b37f8d1",
+      "title": "Callof duty",
+      "color": "unknown"
+    },
+    "genre": {
+      "id": 588,
+      "name": "action"
+    }
   }
 ]

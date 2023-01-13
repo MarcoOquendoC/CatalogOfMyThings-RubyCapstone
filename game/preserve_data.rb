@@ -29,7 +29,7 @@ class PreserveGame
 
   def self.persist_author(authors)
     file = './data/authors.json'
-    author << {
+    author = {
       first_name: authors.first_name,
       last_name: authors.last_name,
       id: authors.id
@@ -39,7 +39,7 @@ class PreserveGame
     @authors << author
     File.write(file, JSON.pretty_generate(@authors))
   end
-  
+
   def self.load_games
     file = './data/games.json'
     data = []
@@ -60,12 +60,12 @@ class PreserveGame
   end
 
   def self.load_authors
-    file = './data/games.json'
+    file = './data/authors.json'
     data = []
     if File.exist?(file)
       JSON.parse(File.read(file)).each do |author|
-        preserved_author = Author.new(author['author']['first_name'], author['author']['last_name'],
-                                      author['author']['id'])
+        preserved_author = Author.new(author['first_name'], author['last_name'],
+                                      author['id'])
         data << preserved_author
       end
     end
