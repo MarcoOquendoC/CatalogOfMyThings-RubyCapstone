@@ -7,6 +7,7 @@ require_relative 'music/genre'
 require_relative 'game/preserve_data'
 require_relative 'book/book'
 require_relative 'book/label'
+require_relative 'book/persist_books'
 
 class App
   include FirstMenu
@@ -14,8 +15,8 @@ class App
   def initialize
     @games = PreserveGame.load_games
     @authors = PreserveGame.load_authors
-    @books_list = []
-    @labels_list = []
+    @books = PersistBooks.load_books
+    @labels = PersistBooks.load_labels
   end
 
   def run
