@@ -4,9 +4,15 @@ module AddMusicAlbum
 
     print 'Enter the music album\'s genre: '
     genre_name = gets.chomp
-
-    print 'Enter the music album\'s name: '
-    album_name = gets.chomp
+    
+    print 'Enter the music album\'s label: '
+    label = gets.chomp
+    
+    print 'Enter the music album\'s author\'s first name: '
+    first_name = gets.chomp
+    
+    print 'Enter the music album\'s author\'s last name: '
+    last_name = gets.chomp
 
     print "\nWhat's the publish date? [year]: "
     album_date = gets.chomp.to_i
@@ -20,11 +26,19 @@ module AddMusicAlbum
                       false
                     end
 
-    music_album = MusicAlbum.new(album_date, album_name, on_spotify: is_on_spotify)
+    music_album = MusicAlbum.new(album_date, on_spotify: is_on_spotify)
 
+    label = Label.new(label, 'unknown')
+    label.add_item(music_album)
+    
+    author = Author.new(first_name, last_name)
+    author.add_item(music_album)
+    
     new_genre = Genre.new(genre_name)
     new_genre.add_item(music_album)
 
+    @labels_list << label
+    @authors << author
     @genres << new_genre
     @music_albums << music_album
 
