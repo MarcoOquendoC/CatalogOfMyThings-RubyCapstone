@@ -7,7 +7,7 @@ module ListGames
     else
       puts "\n List of Games \n"
       @games.each_with_index do |game, index|
-        print "(#{index + 1}) Game: #{game.label.title} by #{game.author.first_name}" \
+        print "(#{index + 1}) Game: #{game.label.title} by #{game.author.first_name} " \
               "#{game.author.last_name} has published on #{game.publish_date} \n"
       end
     end
