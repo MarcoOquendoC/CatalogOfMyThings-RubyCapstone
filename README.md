@@ -63,7 +63,7 @@
 
 ## 🚀 Project Documentation <a name="live-demo"></a>
 
-Please visit our zoom video presentation. Click the [Link](https://drive.google.com/file/d/1S4w5a0igAJnLDfxAT-8ovvNgaqsSCk88/view?usp=sharing) button.
+Please visit our zoom video presentation. Click the [Link](https://drive.google.com/file/d/1j-fA4S59bbN4salxQjsCuR9Lu0JDB_W1/view?usp=sharing) button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,7 +114,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-The project is not yet deployable
+Please visit and try the app. Click the [ ![Run](https://img.shields.io/badge/-Run-brightgreen)](https://replit.com/@marcooquendoc/CatalogOfMyThings-RubyCapstone#main.rb) button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
