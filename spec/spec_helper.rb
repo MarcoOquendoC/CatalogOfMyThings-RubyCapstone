@@ -1,0 +1,7 @@
+require_relative '../game/author'
+require_relative '../game/game'
+require_relative '../book/book'
+require_relative '../book/label'
+require_relative '../music/genre'
+require_relative '../music/music_album'
+require_relative '../src/item'
