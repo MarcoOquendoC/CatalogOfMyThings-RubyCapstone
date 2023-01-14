@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1479637d-9971-45da-8b2f-af66bf75797f",
+    "publisher": "Mario",
+    "cover_state": "good",
+    "publish_date": "2021-02",
+    "author": {
+      "first_name": "Stephen",
+      "last_name": "Hawking",
+      "id": 935
+    },
+    "label": {
+      "id": "6626623a-6298-442d-9e38-16364d04e862",
+      "title": "The stars",
+      "color": "white"
+    },
+    "genre": {
+      "id": "a5542f92-77bf-477f-a777-57aed07f9138",
+      "name": "Scientific"
+    }
+  }
+]
