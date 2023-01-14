@@ -114,7 +114,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-The project is not yet deployable
+Please visit and try the app. Click the [ ![Run](https://img.shields.io/badge/-Run-brightgreen)](https://replit.com/@marcooquendoc/CatalogOfMyThings-RubyCapstone#main.rb) button.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
