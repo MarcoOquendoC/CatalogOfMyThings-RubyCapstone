@@ -10,6 +10,8 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🚀 Project Documentation ](#-project-documentation-)
+    - [Video ](#video)
+    - [Diagram ](#diagram)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -64,6 +66,10 @@
 ## 🚀 Project Documentation <a name="live-demo"></a>
 
 Please visit our zoom video presentation. Click the [Link](https://drive.google.com/file/d/1km_KsZdpT59_Uxlv6F9z-UinwrX-Ohpx/view?usp=sharing) button.
+
+
+### Diagram
+![Diagram](https://user-images.githubusercontent.com/35680940/211393165-1c878ea1-12e4-4f7f-a749-f3a3c7823c7e.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
