@@ -153,8 +153,11 @@ Please visit and try the app. Click the [ ![Run](https://img.shields.io/badge/-R
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Ability to deploy on the web]**
 - [ ] **[Integration with PostgreSQL]**
+- [ ] **[Refactor files and code to match the drawing below]**
+![image](https://user-images.githubusercontent.com/104022866/212580834-c063ba10-4e3c-420a-a3df-1645a9e925d1.png)
+- [ ] **[Refactor reading the data to get wired associations]**
+![image](https://user-images.githubusercontent.com/104022866/212581498-aaecc7c4-19db-4614-a60e-64cf6f073bbf.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
