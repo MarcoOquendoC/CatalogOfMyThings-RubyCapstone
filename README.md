@@ -99,7 +99,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  bundler install
+  bundle install
 ```
 
 ### Usage
