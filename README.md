@@ -155,7 +155,7 @@ Please visit and try the app. Click the [ ![Run](https://img.shields.io/badge/-R
 
 - [ ] **[Integration with PostgreSQL]**
 - [ ] **[Refactor files and code to match the drawing below]**
-![image](https://user-images.githubusercontent.com/104022866/212580834-c063ba10-4e3c-420a-a3df-1645a9e925d1.png)
+![image](https://user-images.githubusercontent.com/104022866/214361036-b891696d-8261-4733-9062-9dabdce3f1d8.png)
 - [ ] **[Refactor reading the data to get wired associations]**
 ![image](https://user-images.githubusercontent.com/104022866/212581498-aaecc7c4-19db-4614-a60e-64cf6f073bbf.png)
 
