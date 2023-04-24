@@ -129,19 +129,19 @@ Please visit and try the app. Click the [ ![Run](https://img.shields.io/badge/-R
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Fábio Lima**
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03KV2DFHNV-e9410c8a189b-512" alt="Fabio" width="40" height="40" /> **Fábio Lima**
 
 - GitHub: [@limavfabio](https://github.com/limavfabio)
 - Twitter: [@limavfabio](https://twitter.com/limavfabio)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/limavfabio)
 
-👤 **Marco Oquendo**
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03GYGT3LBA-0bd15eb5c4a7-512" alt="Marco" width="40" height="40" /> **Marco Oquendo**
 
 - GitHub: [@MarcoOquendoC](https://github.com/MarcoOquendoC). 
 - Twitter: [@marcooquendoc](https://twitter.com/marcooquendoc). 
 - LinkedIn: [Marco Vinicio Oquendo](https://www.linkedin.com/in/MarcoOquendoC/). 
 
-👤 **Miliyon Ayalew**
+<img src="https://ca.slack-edge.com/T47CT8XPG-U03NSM53L6Q-8e49c46dccdb-512" alt="Miliyon" width="40" height="40" /> **Miliyon Ayalew**
 
 - GitHub: [@Miliyonayalew](https://github.com/Miliyonayalew/)
 - Twitter: [@Miliyonayalew](https://twitter.com/MilaAyalew)
